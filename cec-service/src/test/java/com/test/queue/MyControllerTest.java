@@ -31,15 +31,12 @@ public class MyControllerTest {
         obj.put("mongoBaseURL", "http://test.com");
 
         options = new DeploymentOptions().setConfig(obj);
-
         vertx.deployVerticle(MyServiceVerticle.class.getName(), options, context.asyncAssertSuccess());
 
-/*
         try {
-            Thread.sleep(7000);
+            Thread.sleep(700);
         } catch (Exception ex) {
         }
-*/
 
 
         System.out.println("TEST -- CONFIG VALUE SEARCH ****" + vertx.getOrCreateContext().config().getString("mongoBaseURL"));
@@ -48,9 +45,7 @@ public class MyControllerTest {
    @Test
     public void consumeTest(TestContext context)
     {
-
-        System.out.println("TEST -- CONFIG VALUE SEARCH ****"  +vertx.getOrCreateContext().config().getString("mongoBaseURL"));
-
+        System.out.println("consumeTest ---- TEST -- CONFIG VALUE SEARCH ****"  +vertx.getOrCreateContext().config().getString("mongoBaseURL"));
     }
 
 }

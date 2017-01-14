@@ -15,20 +15,11 @@ public class MyServiceVerticle extends AbstractVerticle {
     private static final Logger logger = LoggerFactory.getLogger(MyServiceVerticle.class);
 
     private HttpServer httpServer;
-    private Router router;
-
-    private Vertx vertx;
-private String getmongoUrl;
-
-    @Override
-    public void init(Vertx vertx, Context context) {
-        super.init(vertx, context);
-        getmongoUrl= vertx.getOrCreateContext().config().getString("mongoBaseURL");
-        this.vertx = vertx;
-    }
+    private String getmongoUrl;
 
     @Override
     public void start() {
+        getmongoUrl= config().getString("mongoBaseURL");
         logger.info("Vertx is going to start @@@--->>>>" + getmongoUrl);
     }
 
