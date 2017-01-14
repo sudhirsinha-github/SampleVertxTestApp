@@ -1,0 +1,5 @@
+{
+  "DEV": {
+    "mongoBaseURL": "http://test.jj"
+  }
+}

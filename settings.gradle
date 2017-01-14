@@ -1,0 +1,3 @@
+rootProject.name = 'nextgencec'
+include 'cec-service'
+
