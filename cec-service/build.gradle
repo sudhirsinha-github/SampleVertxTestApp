@@ -64,3 +64,5 @@ jacocoTestReport {
         })
     }
 }
+
+check.dependsOn jacocoTestReport
