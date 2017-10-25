@@ -2,9 +2,5 @@ language: java
 sudo: enabled
 jdk:
   - oraclejdk8
-before_script:
-  - chmod +x gradlew
-script:
-  - ./gradlew clean jacocoTestReport
 after_success:
   - bash <(curl -s https://codecov.io/bash)
