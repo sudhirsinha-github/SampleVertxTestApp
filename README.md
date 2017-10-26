@@ -1,7 +1,6 @@
 # TEST
 
 ![alt build](https://travis-ci.org/sudhirsinha-github/SampleVertxTestApp.svg?branch=master)
-![Code Coverage](https://codecov.io/gh/sudhirsinha-github/SampleVertxTestApp)
 [![Code Coverage](https://img.shields.io/codecov/c/github/sudhirsinha-github/property-providers/develop.svg)](https://codecov.io/github/pvorb/property-providers?branch=develop)
 
 # Build and run test coverage
